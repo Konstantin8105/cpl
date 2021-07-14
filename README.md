@@ -16,3 +16,34 @@ Source | Characters per line
 Line heignt by [Golden Ratio Typography Calculator](https://grtcalculator.com/).
 
 Golden Ratio value is `1.61803398874989484820...`(etc.).
+
+## Example of line
+
+Unicode symbols are have different symbol width.
+
+```go
+package main
+
+import "fmt"
+
+func main() {
+	for i := 0; i < 44; i++ {
+		fmt.Printf("界")
+	}
+	fmt.Printf("\n")
+	for i := 0; i < 80; i++ {
+		fmt.Printf("Й")
+	}
+	fmt.Printf("\n")
+	for i := 0; i < 80; i++ {
+		fmt.Printf("&")
+	}
+	fmt.Printf("\n")
+}
+```
+
+```
+界界界界界界界界界界界界界界界界界界界界界界界界界界界界界界界界界界界界界界界界界界界界
+ЙЙЙЙЙЙЙЙЙЙЙЙЙЙЙЙЙЙЙЙЙЙЙЙЙЙЙЙЙЙЙЙЙЙЙЙЙЙЙЙЙЙЙЙЙЙЙЙЙЙЙЙЙЙЙЙЙЙЙЙЙЙЙЙЙЙЙЙЙЙЙЙЙЙЙЙЙЙЙЙ
+&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
+```
